@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* boltappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* boltappTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-boltapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-boltapp.a */; };
+		0365B337927D472CBA3108A1 /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCE60E3B0847408A9701E042 /* Outfit-SemiBold.ttf */; };
+		0790B41B0A4143B2A7F7A2D4 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639548E076EB47ED8F78A56F /* LibreBaskerville-Regular.ttf */; };
+		0FB7EEDB5889468992BEBA98 /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78090E3B23EC42D3A49E0E13 /* Outfit-Regular.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-boltapp-boltappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-boltapp-boltappTests.a */; };
+		258BED39B9A341EFA94A75AE /* Jose.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5901D30E227C49E39162CBD8 /* Jose.ttf */; };
+		2B83C101B1A54D7AAFDFAAD1 /* Hellix-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D197072EEDA04D77966B58EA /* Hellix-Medium.ttf */; };
+		44DD81F2E0654696AEF2F81B /* Sofia Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8B4E54C3E214917B9312562 /* Sofia Pro.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		89000436566F46D38474F480 /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0ABD01780D14C1B880FFC9D /* Outfit-Light.ttf */; };
+		8ADC2A06EC34427D8ACFB41C /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41300E1363034A0186CEA4E6 /* LibreBaskerville-Bold.ttf */; };
+		8F4099F0516C4B51954031C5 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7E3C45F80904B3EAFFA2DF4 /* Rubik-Regular.ttf */; };
+		9DC5E73582A8444DBAD4731E /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E90ADF6D04C07B27A86AB /* Rubik-Medium.ttf */; };
+		BC93E4C1DF122BA5A2E2B45C /* libPods-boltapp-boltappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C30069033EC2F0C67202E5A /* libPods-boltapp-boltappTests.a */; };
+		C2A4989CBBC64E69B5ABAF02 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDC41FD9D76542A69F26BF42 /* Rubik-SemiBold.ttf */; };
+		D2589B44D750EBF06F027B23 /* libPods-boltapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D89DD9DF75E6917C12F3E396 /* libPods-boltapp.a */; };
+		FA105CAB62344AB4BB0DA5FA /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70BE98BD09AA42429498F045 /* Outfit-Bold.ttf */; };
+		FEE864160B964AEE90D0C1A2 /* Hellix-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7D813D0DCC4402A01A9928 /* Hellix-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +43,33 @@
 		00E356EE1AD99517003FC87E /* boltappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boltappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* boltappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boltappTests.m; sourceTree = "<group>"; };
+		0A6E90ADF6D04C07B27A86AB /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* boltapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boltapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = boltapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = boltapp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = boltapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = boltapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = boltapp/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-boltapp-boltappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boltapp-boltappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-boltapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp.debug.xcconfig"; path = "Target Support Files/Pods-boltapp/Pods-boltapp.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-boltapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp.release.xcconfig"; path = "Target Support Files/Pods-boltapp/Pods-boltapp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-boltapp-boltappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp-boltappTests.debug.xcconfig"; path = "Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-boltapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boltapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394A8DE5D540D873B8755972 /* Pods-boltapp-boltappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp-boltappTests.debug.xcconfig"; path = "Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41300E1363034A0186CEA4E6 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Bold.ttf"; path = "../assets/fonts/LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		545531667DA78AC6379608BF /* Pods-boltapp-boltappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp-boltappTests.release.xcconfig"; path = "Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests.release.xcconfig"; sourceTree = "<group>"; };
+		5901D30E227C49E39162CBD8 /* Jose.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Jose.ttf; path = ../assets/fonts/Jose.ttf; sourceTree = "<group>"; };
+		607B277A20D4FD5CE8D8EA48 /* Pods-boltapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp.debug.xcconfig"; path = "Target Support Files/Pods-boltapp/Pods-boltapp.debug.xcconfig"; sourceTree = "<group>"; };
+		639548E076EB47ED8F78A56F /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Regular.ttf"; path = "../assets/fonts/LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		70BE98BD09AA42429498F045 /* Outfit-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Bold.ttf"; path = "../assets/fonts/Outfit-Bold.ttf"; sourceTree = "<group>"; };
+		78090E3B23EC42D3A49E0E13 /* Outfit-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Regular.ttf"; path = "../assets/fonts/Outfit-Regular.ttf"; sourceTree = "<group>"; };
+		7C30069033EC2F0C67202E5A /* libPods-boltapp-boltappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boltapp-boltappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = boltapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-boltapp-boltappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp-boltappTests.release.xcconfig"; path = "Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7D813D0DCC4402A01A9928 /* Hellix-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Hellix-SemiBold.ttf"; path = "../assets/fonts/Hellix-SemiBold.ttf"; sourceTree = "<group>"; };
+		BCE60E3B0847408A9701E042 /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-SemiBold.ttf"; path = "../assets/fonts/Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
+		C7E3C45F80904B3EAFFA2DF4 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		CFF8D7C447828A5FDA688D41 /* Pods-boltapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boltapp.release.xcconfig"; path = "Target Support Files/Pods-boltapp/Pods-boltapp.release.xcconfig"; sourceTree = "<group>"; };
+		D197072EEDA04D77966B58EA /* Hellix-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Hellix-Medium.ttf"; path = "../assets/fonts/Hellix-Medium.ttf"; sourceTree = "<group>"; };
+		D89DD9DF75E6917C12F3E396 /* libPods-boltapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boltapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B4E54C3E214917B9312562 /* Sofia Pro.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sofia Pro.otf"; path = "../assets/fonts/Sofia Pro.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EDC41FD9D76542A69F26BF42 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		F0ABD01780D14C1B880FFC9D /* Outfit-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Light.ttf"; path = "../assets/fonts/Outfit-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-boltapp-boltappTests.a in Frameworks */,
+				BC93E4C1DF122BA5A2E2B45C /* libPods-boltapp-boltappTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-boltapp.a in Frameworks */,
+				D2589B44D750EBF06F027B23 /* libPods-boltapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-boltapp.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-boltapp-boltappTests.a */,
+				D89DD9DF75E6917C12F3E396 /* libPods-boltapp.a */,
+				7C30069033EC2F0C67202E5A /* libPods-boltapp-boltappTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				907EB15DE52B4386AB5C7A33 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,13 +164,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		907EB15DE52B4386AB5C7A33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4E54C3E214917B9312562 /* Sofia Pro.otf */,
+				D197072EEDA04D77966B58EA /* Hellix-Medium.ttf */,
+				9F7D813D0DCC4402A01A9928 /* Hellix-SemiBold.ttf */,
+				5901D30E227C49E39162CBD8 /* Jose.ttf */,
+				41300E1363034A0186CEA4E6 /* LibreBaskerville-Bold.ttf */,
+				639548E076EB47ED8F78A56F /* LibreBaskerville-Regular.ttf */,
+				70BE98BD09AA42429498F045 /* Outfit-Bold.ttf */,
+				F0ABD01780D14C1B880FFC9D /* Outfit-Light.ttf */,
+				78090E3B23EC42D3A49E0E13 /* Outfit-Regular.ttf */,
+				BCE60E3B0847408A9701E042 /* Outfit-SemiBold.ttf */,
+				0A6E90ADF6D04C07B27A86AB /* Rubik-Medium.ttf */,
+				C7E3C45F80904B3EAFFA2DF4 /* Rubik-Regular.ttf */,
+				EDC41FD9D76542A69F26BF42 /* Rubik-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-boltapp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-boltapp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-boltapp-boltappTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-boltapp-boltappTests.release.xcconfig */,
+				607B277A20D4FD5CE8D8EA48 /* Pods-boltapp.debug.xcconfig */,
+				CFF8D7C447828A5FDA688D41 /* Pods-boltapp.release.xcconfig */,
+				394A8DE5D540D873B8755972 /* Pods-boltapp-boltappTests.debug.xcconfig */,
+				545531667DA78AC6379608BF /* Pods-boltapp-boltappTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "boltappTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				5882CA1A2F877CA4ED5ADE59 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				587F59DEBCA8212FCD0E12E8 /* [CP] Embed Pods Frameworks */,
+				76ACE8269470E1A1273A2DC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "boltapp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				1253E8B56D9B4EF5C79B42E0 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				A56854836BA0CE66E9CDFFCB /* [CP] Embed Pods Frameworks */,
+				0B114D14F30938170472B1FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +291,19 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				44DD81F2E0654696AEF2F81B /* Sofia Pro.otf in Resources */,
+				2B83C101B1A54D7AAFDFAAD1 /* Hellix-Medium.ttf in Resources */,
+				FEE864160B964AEE90D0C1A2 /* Hellix-SemiBold.ttf in Resources */,
+				258BED39B9A341EFA94A75AE /* Jose.ttf in Resources */,
+				8ADC2A06EC34427D8ACFB41C /* LibreBaskerville-Bold.ttf in Resources */,
+				0790B41B0A4143B2A7F7A2D4 /* LibreBaskerville-Regular.ttf in Resources */,
+				FA105CAB62344AB4BB0DA5FA /* Outfit-Bold.ttf in Resources */,
+				89000436566F46D38474F480 /* Outfit-Light.ttf in Resources */,
+				0FB7EEDB5889468992BEBA98 /* Outfit-Regular.ttf in Resources */,
+				0365B337927D472CBA3108A1 /* Outfit-SemiBold.ttf in Resources */,
+				9DC5E73582A8444DBAD4731E /* Rubik-Medium.ttf in Resources */,
+				8F4099F0516C4B51954031C5 /* Rubik-Regular.ttf in Resources */,
+				C2A4989CBBC64E69B5ABAF02 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,46 +326,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		0B114D14F30938170472B1FE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-boltapp-boltappTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		1253E8B56D9B4EF5C79B42E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +365,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		587F59DEBCA8212FCD0E12E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,24 +382,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		5882CA1A2F877CA4ED5ADE59 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-boltapp-boltappTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		76ACE8269470E1A1273A2DC2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +419,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp-boltappTests/Pods-boltapp-boltappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A56854836BA0CE66E9CDFFCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boltapp/Pods-boltapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +471,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-boltapp-boltappTests.debug.xcconfig */;
+			baseConfigurationReference = 394A8DE5D540D873B8755972 /* Pods-boltapp-boltappTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +498,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-boltapp-boltappTests.release.xcconfig */;
+			baseConfigurationReference = 545531667DA78AC6379608BF /* Pods-boltapp-boltappTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,7 +522,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-boltapp.debug.xcconfig */;
+			baseConfigurationReference = 607B277A20D4FD5CE8D8EA48 /* Pods-boltapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -488,7 +549,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-boltapp.release.xcconfig */;
+			baseConfigurationReference = CFF8D7C447828A5FDA688D41 /* Pods-boltapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -544,7 +605,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -572,6 +633,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -579,7 +641,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -616,7 +684,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -636,6 +704,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -643,7 +712,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
