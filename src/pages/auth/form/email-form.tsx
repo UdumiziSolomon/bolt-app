@@ -15,7 +15,9 @@ const EmailForm = () => {
       <Header headerText="Enter your email" isText={true} />
       <View style={styles.body}>
         <FTextInput placeholder="Email" label="Email" />
-        <Text style={styles.desc}>We'll send you your ride receipts</Text>
+        <Text style={styles.desc}>
+          We'll send you your app receipts and important informations.
+        </Text>
       </View>
       <Button
         isFilled={true}

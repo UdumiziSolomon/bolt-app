@@ -1,20 +1,21 @@
+/* eslint-disable react-native/no-inline-styles */
 import 'react-native-gesture-handler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
-import { SafeAreaView, StyleSheet, LogBox } from 'react-native';
+import { StyleSheet, LogBox, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { RootNavigator } from 'navigations/root-navigator';
+import { ms } from 'react-native-size-matters';
 
 LogBox.ignoreAllLogs();
 
 function App(): React.JSX.Element {
   return (
-    // eslint-disable-next-line react-native/no-inline-styles
     <GestureHandlerRootView style={{ flex: 1 }}>
       <NavigationContainer>
-        <SafeAreaView style={styles.wrapper}>
+        <View style={styles.wrapper}>
           <RootNavigator />
-        </SafeAreaView>
+        </View>
       </NavigationContainer>
     </GestureHandlerRootView>
   );
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
   wrapper: {
     backgroundColor: '#ffffff',
     flex: 1,
+    paddingTop: ms(50),
   },
 });
 

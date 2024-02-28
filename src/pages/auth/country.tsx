@@ -60,7 +60,7 @@ const Country = (): JSX.Element => {
       <View
         style={[
           styles.inputWrapper,
-          { borderColor: isFocused ? '#1AA463' : '#aaa' },
+          { borderColor: isFocused ? '#457b9d' : '#aaa' },
         ]}>
         <Search width={ms(25)} height={ms(25)} />
         <TextInput

@@ -14,6 +14,8 @@ import Chat from 'svgs/chat.svg';
 import Down from 'svgs/down.svg';
 import Checked from 'svgs/checked.svg';
 import UnChecked from 'svgs/unchecked.svg';
+import Phone from 'svgs/phone.svg';
+
 import {
   VerificationCodeEnumList,
   useVerificationModeState,
@@ -27,19 +29,14 @@ const Country = (): JSX.Element => {
     useVerificationModeState();
   const [isFocused, setIsFocused] = useState<boolean>(false);
   const [number, setIsNumber] = useState<string>('');
-  const [isError, setIsError] = useState<boolean>(false);
   const [load, setIsLoad] = useState<boolean>(false);
 
   function handleNumber() {
-    if (number.length < 1) {
-      setIsError(true);
-    } else {
-      setIsLoad(true);
-      setTimeout(() => {
-        setIsLoad(false);
-        navigate('VerificationCode', { number: number });
-      }, 1000);
-    }
+    setIsLoad(true);
+    setTimeout(() => {
+      setIsLoad(false);
+      navigate('VerificationCode', { number: number });
+    }, 1000);
   }
 
   return (
@@ -62,7 +59,7 @@ const Country = (): JSX.Element => {
           <View
             style={[
               styles.inputReg,
-              { borderColor: isFocused ? '#1AA463' : '#aaa' },
+              { borderColor: isFocused ? '#457b9d' : '#aaa' },
             ]}>
             <TextInput
               defaultValue={number}
@@ -76,20 +73,33 @@ const Country = (): JSX.Element => {
           </View>
         </View>
 
-        {isError && (
-          <Text style={styles.incorrect}> The phone number is incorrect </Text>
-        )}
-
         <View style={{ marginTop: ms(15) }}>
           <Pressable
             onPress={() => updateVerificationMode(VerificationCodeEnumList.SMS)}
             style={[styles.flexy, styles.firstOpt]}>
             <View style={[styles.flexy]}>
               <Chat width={ms(30)} height={ms(30)} />
-              <Text style={styles.platformText}>Use SMS</Text>
+              <Text style={styles.platformText}> Use SMS</Text>
             </View>
             <View>
               {verificationMode === VerificationCodeEnumList.SMS ? (
+                <Checked width={ms(30)} height={ms(30)} />
+              ) : (
+                <UnChecked width={ms(30)} height={ms(30)} />
+              )}
+            </View>
+          </Pressable>
+          <Pressable
+            onPress={() =>
+              updateVerificationMode(VerificationCodeEnumList.PHONE)
+            }
+            style={[styles.flexy, styles.secondOpt]}>
+            <View style={styles.flexy}>
+              <Phone width={ms(30)} height={ms(30)} />
+              <Text style={styles.platformText}> Phone call</Text>
+            </View>
+            <View>
+              {verificationMode === VerificationCodeEnumList.PHONE ? (
                 <Checked width={ms(30)} height={ms(30)} />
               ) : (
                 <UnChecked width={ms(30)} height={ms(30)} />
@@ -103,7 +113,7 @@ const Country = (): JSX.Element => {
             style={[styles.flexy, styles.secondOpt]}>
             <View style={styles.flexy}>
               <Whatsapp width={ms(35)} height={ms(35)} />
-              <Text style={styles.platformText}>Use Whatsapp</Text>
+              <Text style={styles.platformText}>Whatsapp message</Text>
             </View>
             <View>
               {verificationMode === VerificationCodeEnumList.WHATSAPP ? (
@@ -116,9 +126,6 @@ const Country = (): JSX.Element => {
         </View>
       </View>
       <View>
-        <Text style={styles.downText}>
-          Bolt will not send anything without your consent{' '}
-        </Text>
         <Button
           text="Continue"
           isFilled={true}
@@ -199,12 +206,6 @@ const styles = ScaledSheet.create({
     fontSize: ms(13.5),
     fontFamily: Fonts.Bold,
     color: '#555',
-  },
-  downText: {
-    fontSize: ms(14.5),
-    fontFamily: Fonts.Regular,
-    marginBottom: ms(10),
-    color: '#6c757d',
   },
   incorrect: {
     fontFamily: Fonts.Regular,

@@ -5,8 +5,7 @@ import VerificationCode from './verification-code';
 import CreateAccount from './create-account';
 import EmailForm from './form/email-form';
 import NameForm from './form/name-form';
-import PaymentForm from './form/payment-form';
-import AddCard from './form/add-card';
+import AccountSetup from './form/account-setup';
 
 export {
   Auth,
@@ -16,6 +15,5 @@ export {
   CreateAccount,
   EmailForm,
   NameForm,
-  PaymentForm,
-  AddCard,
+  AccountSetup,
 };

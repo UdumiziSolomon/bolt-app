@@ -3,8 +3,8 @@ import { ParamListBase } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { BottomSheetTransition } from 'utils/navigation';
 
-import App from 'pages/app/app';
 import { AuthNavigator } from './auth/auth-navigator';
+import { AppNavigator } from './app/app-navigator';
 
 const Stack = createStackNavigator<ParamListBase>();
 
@@ -14,7 +14,7 @@ export const RootNavigator = () => {
 
   return (
     <Navigator
-      initialRouteName={isUser ? 'AuthNavigator' : 'AppNavigator'}
+      initialRouteName={!isUser ? 'AuthNavigator' : 'AppNavigator'}
       screenOptions={{
         headerShown: false,
         gestureEnabled: false,
@@ -27,7 +27,7 @@ export const RootNavigator = () => {
       />
       <Screen
         name="AppNavigator"
-        component={App}
+        component={AppNavigator}
         options={BottomSheetTransition}
       />
     </Navigator>

@@ -16,6 +16,7 @@ import { BottomSheet } from 'components/modals/bottom-sheet';
 import Chat from 'svgs/chat.svg';
 import Phone from 'svgs/phone.svg';
 import Pencil from 'svgs/pencil.svg';
+import { Loading } from 'components/modals/loading-modal';
 
 const VerificationCode = () => {
   const { navigate } = useNavigation<Nav>();
@@ -26,16 +27,19 @@ const VerificationCode = () => {
   const [countdown, setCountdown] = useState<number>(5);
   const [otp, setOtp] = useState<string>('');
   const [show, setShow] = useState<boolean>(false);
+  const [load, setLoad] = useState<boolean>(false);
 
   const closeSheet = (): void => {
     setShow(false);
   };
 
-  if (otp.length === 4) {
+  const navigateHandler = () => {
+    setLoad(true);
     setTimeout(() => {
+      setLoad(false);
       navigate('CreateAccount');
-    }, 1000);
-  }
+    }, 2000);
+  };
 
   useEffect(() => {
     if (countdown > 0) {
@@ -50,6 +54,9 @@ const VerificationCode = () => {
   return (
     <View style={styles.wrapper}>
       <Header />
+      <Modal transparent visible={load}>
+        <Loading />
+      </Modal>
       <View style={styles.body}>
         <Text style={styles.numberText}>Enter the code </Text>
         <Text style={styles.numberDesc}>
@@ -74,9 +81,16 @@ const VerificationCode = () => {
         </View>
         {countdown <= 0 && (
           <Button
-            isFilled={true}
             text="Resend code"
             onPress={() => setShow(true)}
+            isBorder={true}
+          />
+        )}
+        {otp.length === 4 && (
+          <Button
+            isFilled={true}
+            text="Verify account"
+            onPress={navigateHandler}
           />
         )}
       </View>

@@ -1,4 +1,4 @@
-import { Modal, Pressable, Text, View } from 'react-native';
+import { Modal, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { ScaledSheet, ms } from 'react-native-size-matters';
 import { useNavigation } from '@react-navigation/native';
@@ -6,9 +6,9 @@ import { Nav } from 'types/nav-lib';
 import { Button } from 'components/buttons/button';
 import { Fonts } from 'ui/typography';
 
-import Plus from 'svgs/plus.svg';
-import Money from 'svgs/money.svg';
 import { Loading } from 'components/modals/loading-modal';
+import Header from 'components/header';
+import Done from 'svgs/done.svg';
 
 const PaymentForm = () => {
   const { navigate } = useNavigation<Nav>();
@@ -24,21 +24,16 @@ const PaymentForm = () => {
 
   return (
     <View style={styles.wrapper}>
+      <Header isText={false} />
       <View style={styles.body}>
-        <Text style={styles.payText}>Set up payment</Text>
+        <Done width={ms(250)} height={ms(250)} />
+        <Text style={styles.payText}>Account</Text>
         <Text style={styles.payDesc}>
-          Pick a preferred payment method for a more convenient ride later.
+          Your account is ready!!!... Ready to set up your profile?
         </Text>
-        <Pressable style={styles.list} onPress={() => navigate('AddCard')}>
-          <Plus width={ms(30)} height={ms(30)} />
-          <Text style={styles.listText}> Add debit/credit card </Text>
-        </Pressable>
-        <Pressable style={styles.highlight} onPress={navigateHandler}>
-          <Money width={ms(40)} height={ms(40)} />
-          <Text style={styles.listText}> Cash </Text>
-        </Pressable>
       </View>
-      <Button text="Set up later" onPress={navigateHandler} />
+      <Button text="Skip" onPress={navigateHandler} isBorder={true} />
+      <Button text="Set up profile" isFilled={true} />
       <Modal transparent visible={show}>
         <Loading />
       </Modal>
@@ -56,10 +51,11 @@ const styles = ScaledSheet.create({
   },
   body: {
     flex: 1,
-    marginTop: ms(50),
+    marginTop: ms(10),
+    alignItems: 'center',
   },
   payText: {
-    fontSize: ms(23),
+    fontSize: ms(24),
     marginTop: ms(10),
     fontFamily: Fonts.Bold,
   },
@@ -70,6 +66,7 @@ const styles = ScaledSheet.create({
     lineHeight: ms(22),
     color: '#6c757d',
     marginBottom: ms(15),
+    textAlign: 'center',
   },
   list: {
     flexDirection: 'row',

@@ -3,14 +3,13 @@ import { ParamListBase } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HorizontalTransition } from 'utils/navigation';
 import {
-  AddCard,
   Auth,
   Country,
   CreateAccount,
   EmailForm,
   NameForm,
   Number,
-  PaymentForm,
+  AccountSetup,
   VerificationCode,
 } from 'pages/auth';
 
@@ -54,13 +53,8 @@ export const AuthNavigator = () => {
         options={HorizontalTransition}
       />
       <Screen
-        name="PaymentForm"
-        component={PaymentForm}
-        options={HorizontalTransition}
-      />
-      <Screen
-        name="AddCard"
-        component={AddCard}
+        name="AccountSetup"
+        component={AccountSetup}
         options={HorizontalTransition}
       />
     </Navigator>

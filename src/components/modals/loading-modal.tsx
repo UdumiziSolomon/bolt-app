@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import LottieView from 'lottie-react-native';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { ScaledSheet, ms } from 'react-native-size-matters';
 import { Fonts } from 'ui/typography';
 
@@ -15,7 +15,6 @@ export const Loading = () => {
           loop
           style={{ width: 100, height: 100 }}
         />
-        <Text style={styles.loadText}> Loading... </Text>
       </View>
     </View>
   );
@@ -27,16 +26,16 @@ const styles = ScaledSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 10,
-    backgroundColor: 'rgba(26, 23, 23, 0.5)',
+    backgroundColor: 'rgba(26, 23, 23, 0.6)',
   },
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fff',
     paddingHorizontal: ms(30),
-    paddingVertical: ms(35),
-    borderRadius: ms(25),
+    borderRadius: ms(20),
     width: '85%',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingVertical: ms(20),
   },
   loadText: {
     fontSize: ms(16),

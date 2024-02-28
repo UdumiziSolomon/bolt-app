@@ -9,17 +9,32 @@ interface Props {
   onPress?: () => void;
   isFilled?: boolean;
   isLoading?: boolean;
+  isBorder?: boolean;
 }
 
 const { width } = Dimensions.get('window');
 
-export const Button = ({ text, onPress, isFilled, isLoading }: Props) => {
+export const Button = ({
+  text,
+  onPress,
+  isFilled,
+  isLoading,
+  isBorder,
+}: Props) => {
   return (
     <Pressable
-      style={[styles.btn, { backgroundColor: isFilled ? '#1AA463' : '#eee' }]}
+      style={[
+        styles.btn,
+        {
+          backgroundColor: isFilled ? '#457b9d' : '#eee',
+          borderWidth: isBorder ? ms(1.5) : 0,
+          borderColor: isBorder ? '#457b9d' : '#eee',
+        },
+      ]}
       onPress={onPress}>
       {!isLoading ? (
-        <Text style={[styles.btnText, { color: isFilled ? '#fff' : '#000' }]}>
+        <Text
+          style={[styles.btnText, { color: isFilled ? '#fff' : '#1d3557' }]}>
           {text}
         </Text>
       ) : (

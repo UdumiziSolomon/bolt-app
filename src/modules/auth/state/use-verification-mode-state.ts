@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export enum VerificationCodeEnumList {
   SMS = 'sms',
   WHATSAPP = 'whatsapp',
+  PHONE = 'phone',
 }
 
 type TVerificationModeStore = {

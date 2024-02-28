@@ -44,7 +44,7 @@ export const FTextInput = ({
         style={[
           styles.input,
           {
-            borderColor: isFocused ? '#1AA463' : '#ffffff',
+            borderColor: isFocused ? '#457b9d' : '#ffffff',
             backgroundColor: isFocused ? '#ffffff' : '#e9ecef',
           },
           style,

@@ -5,12 +5,15 @@ import React, { JSX } from 'react';
 import { View, Text, Dimensions, Pressable } from 'react-native';
 import { ms, ScaledSheet } from 'react-native-size-matters';
 import { Nav } from 'types/nav-lib';
+import { useCountryState } from 'modules/auth/state/use-country-state';
 
 const { width } = Dimensions.get('window');
 import Google from 'svgs/google.svg';
 import Facebook from 'svgs/facebook.svg';
-import { useCountryState } from 'modules/auth/state/use-country-state';
+import Yahoo from 'svgs/yahoo.svg';
 import Down from 'svgs/down.svg';
+import Invest from 'svgs/invest.svg';
+
 import { Fonts } from 'ui/typography';
 
 const Auth = (): JSX.Element => {
@@ -20,7 +23,13 @@ const Auth = (): JSX.Element => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.body}>
-        <Text style={styles.number}>Enter your number</Text>
+        <Invest
+          width={ms(220)}
+          height={ms(220)}
+          style={{ marginBottom: ms(20) }}
+        />
+        <Text style={styles.wheels}>DragVest</Text>
+        <Text style={styles.number}>Enter your number to register now.</Text>
         <View style={styles.inputWrapper}>
           <Pressable
             style={{ flexDirection: 'row', alignItems: 'center', gap: ms(3) }}
@@ -36,15 +45,16 @@ const Auth = (): JSX.Element => {
 
         <OrComponent />
 
-        <View style={{ marginVertical: ms(20) }}>
-          <SignInButton
-            text="Sign in with Google"
-            icon={<Google width={ms(30)} height={ms(30)} />}
-          />
-          <SignInButton
-            text="Sign in with Facebook"
-            icon={<Facebook width={ms(30)} height={ms(30)} />}
-          />
+        <View
+          style={{
+            marginVertical: ms(20),
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: ms(10),
+          }}>
+          <SignInButton icon={<Google width={ms(30)} height={ms(30)} />} />
+          <SignInButton icon={<Yahoo width={ms(50)} height={ms(50)} />} />
+          <SignInButton icon={<Facebook width={ms(30)} height={ms(30)} />} />
         </View>
       </View>
 
@@ -58,9 +68,6 @@ const Auth = (): JSX.Element => {
           <Text onPress={() => console.log('HI')} style={styles.terms}>
             <Text>Privacy Policy</Text>
           </Text>
-          , and confirm that you're over 18. We may send promotions related to
-          our services - you can unsubscribe anytime in Communication Settings
-          under your Profile.
         </Text>
       </View>
     </View>
@@ -91,11 +98,18 @@ const styles = ScaledSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  number: {
+  wheels: {
     color: '#000000',
     fontFamily: Fonts.Bold,
-    fontSize: ms(20),
+    fontSize: ms(23),
     fontWeight: 'bold',
+  },
+  number: {
+    color: '#000000',
+    fontFamily: Fonts.Regular,
+    fontSize: ms(16),
+    fontWeight: 'bold',
+    marginTop: ms(8),
   },
   inputWrapper: {
     flexDirection: 'row',
@@ -113,7 +127,7 @@ const styles = ScaledSheet.create({
   numText: {
     fontSize: ms(16),
     marginLeft: ms(10),
-    fontFamily: Fonts.Regular,
+    fontFamily: Fonts.SemiBold,
   },
   flag: {
     fontSize: ms(30),
@@ -121,7 +135,7 @@ const styles = ScaledSheet.create({
   orLayer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: ms(15),
+    marginTop: ms(10),
     justifyContent: 'space-evenly',
     gap: ms(10),
   },
@@ -140,14 +154,14 @@ const styles = ScaledSheet.create({
   },
   footer: {
     alignItems: 'center',
-    paddingVertical: ms(10),
-    paddingHorizontal: ms(15),
+    paddingVertical: ms(15),
+    paddingHorizontal: ms(20),
   },
   footerText: {
     textAlign: 'center',
     color: '#777777',
     fontFamily: Fonts.Regular,
-    fontSize: ms(13),
+    fontSize: ms(14),
     lineHeight: ms(17),
   },
 });

@@ -35,7 +35,7 @@ const NameForm = () => {
       <Button
         isFilled={true}
         text="Continue"
-        onPress={() => navigate('PaymentForm')}
+        onPress={() => navigate('AccountSetup')}
       />
     </View>
   );

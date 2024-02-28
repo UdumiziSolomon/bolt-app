@@ -96,7 +96,7 @@ const styles = ScaledSheet.create({
     borderRadius: ms(10),
   },
   boxFocused: {
-    borderColor: '#1AA463',
+    borderColor: '#457b9d',
   },
   digit: {
     fontSize: ms(22),

@@ -3,22 +3,19 @@ import { View, Text } from 'react-native';
 import { ScaledSheet, ms } from 'react-native-size-matters';
 import { Fonts } from 'ui/typography';
 
-const App = (): JSX.Element => {
+const Home = (): JSX.Element => {
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.text}>Main Application Screen</Text>
+      <Text> Home</Text>
     </View>
   );
 };
 
-export default App;
+export default Home;
 
 const styles = ScaledSheet.create({
   wrapper: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ffffff',
   },
   text: {
     fontFamily: Fonts.Bold,
